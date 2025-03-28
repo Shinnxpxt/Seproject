@@ -1,31 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>SeExpress - Login</title>
+    <link rel="stylesheet" href="css/login.css">
 </head>
-<link rel="stylesheet" href="css/login.css">
-
 <body>
-   <h1>Login</h1>
-
     <div class="login-container">
         <h1>SeExpress</h1>
+        <form id="login-form">
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="button-group">
+                <a href="homepage.html" class="btn btn-primary">Login</a>
+                <a href="index.html" class="btn btn-secondary">Cancel</a>
+            </div>
+        </form>
 
-    <input type="username" name="username" placeholder="Username" required><br>
-    <input type="password" name="password" placeholder="Password" required><br>
-
-    <a href="homepage.html">
-        <button class="buttun button1">Submit</button>
-    </a>
-
-    <a href="index.html">
-        <button class="buttun button2">Cancel</button>
-    </a>
-
+        <div class="register-link">
+            <p>Don't have an account? <a href="register.html" class="btn btn-register">Register</a></p>
+        </div>
     </div>
 </body>
-
 </html>
